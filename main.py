@@ -7,7 +7,7 @@ from loguru import logger
 from src.routes.all_routes import router as all_routes
 
 app = FastAPI(
-    title=os.getenv("TITLE") if os.getenv("TITLE") else "tagsmart API V3",
+    title=os.getenv("TITLE") if os.getenv("TITLE") else "",
     # root_path=os.getenv("ROOT_PATH") if os.getenv("ROOT_PATH") else "/",
     # docs_url=None
 
