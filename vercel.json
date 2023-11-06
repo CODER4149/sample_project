@@ -2,14 +2,6 @@
   "version": 2,
   "name": "sample_project",
 
-  "build": {
-    "src": "/app/main.py",
-    "use": "@vercel/python"
-  },
-    "routes": [
-        {
-        "src": "/(.*)",
-        "dest": "/app/main.py"
-        }
-    ]
+  "builds":  [{ "src": "main.py", "use": "@vercel/python" }],
+    "routes": [{ "src": "/(.*)", "dest": "main.py" }]
 }
